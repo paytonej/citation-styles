@@ -114,7 +114,7 @@
           <text variable="title" quotes="true" suffix=", "/>
           <text term="in" suffix=": "/>
           <text macro="editor" suffix=", "/>
-          <text variable="container-title" form="short" text-case="title" suffix=", "/>
+          <text variable="container-title" form="long" text-case="title" suffix=", "/>
           <text macro="edition" suffix=", "/>
           <text macro="publisher"/>
           <group delimiter=" ">
@@ -141,7 +141,7 @@
           <group delimiter=" ">
             <text variable="title" quotes="true" suffix=", "/>
             <text variable="container-title" form="long" font-style="italic" text-case="title"/>
-            <text variable="volume" font-style="bold"/>
+            <text variable="volume" font-weight="bold"/>
             <text macro="year-date" prefix="(" suffix=")"/>
             <text variable="page" form="short"/>
           </group>
