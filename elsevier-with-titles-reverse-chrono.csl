@@ -53,10 +53,6 @@
       </else>
     </choose>
   </macro>
-  <macro name="date-sort-date">
-    <date variable="issued"/>
-    </date>
-  </macro>
   <macro name="publisher">
     <text variable="publisher" suffix=", "/>
     <text variable="publisher-place" suffix=", "/>
@@ -92,7 +88,6 @@
   </macro>
   <citation collapse="citation-number">
     <sort>
-	  <key macro="year-date" sort="ascending"/>
 	  <key macro="citation-number" sort="descending"/>
     </sort>
     <layout prefix="[" suffix="]" delimiter=",">
