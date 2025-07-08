@@ -54,7 +54,7 @@
     </choose>
   </macro>
   <macro name="date-sort-date">
-    <date variable="issued" form="numeric"/>
+    <date variable="issued"/>
     </date>
   </macro>
   <macro name="publisher">
