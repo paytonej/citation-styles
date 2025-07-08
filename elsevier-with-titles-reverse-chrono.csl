@@ -46,6 +46,8 @@
       <if variable="issued">
         <date variable="issued">
           <date-part name="year"/>
+		  <date-part name="month"/>
+		  <date-part name="day"/>
         </date>
       </if>
       <else>
@@ -88,7 +90,7 @@
   </macro>
   <citation collapse="citation-number">
     <sort>
-	  <key macro="year-date" sort="ascending"/>
+	  <key macro="year-date" sort="descending"/>
       <key macro="citation-number" sort="descending"/>
     </sort>
     <layout prefix="[" suffix="]" delimiter=",">
