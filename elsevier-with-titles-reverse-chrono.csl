@@ -83,9 +83,12 @@
       </if>
     </choose>
   </macro>
+  <macro name="citation-number">
+    <text variable="citation-number"/>
+  </macro>
   <citation collapse="citation-number">
     <sort>
-      <key macro="year-date" sort="descending"/>
+      <key macro="citation-number" sort="descending"/>
     </sort>
     <layout prefix="[" suffix="]" delimiter=",">
       <text variable="citation-number"/>
