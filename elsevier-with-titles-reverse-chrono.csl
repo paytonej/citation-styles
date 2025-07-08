@@ -46,14 +46,15 @@
       <if variable="issued">
         <date variable="issued">
           <date-part name="year"/>
-		  <date-part name="month"/>
-		  <date-part name="day"/>
         </date>
       </if>
       <else>
         <text term="no date" form="short"/>
       </else>
     </choose>
+  </macro>
+  <macro name="date-sort-date">
+    <date variable="issued" form="numeric"/>
   </macro>
   <macro name="publisher">
     <text variable="publisher" suffix=", "/>
@@ -90,14 +91,13 @@
   </macro>
   <citation collapse="citation-number">
     <sort>
-	  <key macro="year-date" sort="descending"/>
-      <key macro="citation-number" sort="descending"/>
+	  <key macro="date-sort-date" sort="descending"/>
     </sort>
     <layout prefix="[" suffix="]" delimiter=",">
       <text variable="citation-number"/>
     </layout>
   </citation>
-  <bibliography entry-spacing="0" second-field-align="flush">
+  <bibliography entry-spacing="1" second-field-align="flush" hanging-indent="true">
     <layout suffix=".">
       <text variable="citation-number" prefix="[" suffix="]"/>
       <text macro="author" suffix=", "/>
