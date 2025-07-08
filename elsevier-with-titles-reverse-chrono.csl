@@ -105,13 +105,13 @@
       <choose>
         <if type="bill book graphic legal_case legislation motion_picture report song" match="any">
           <group delimiter=", ">
-            <text variable="title" font-style="italic"/>
+            <text variable="title" prefix=""" suffix="""/>
             <text macro="edition"/>
             <text macro="publisher"/>
           </group>
         </if>
         <else-if type="chapter paper-conference" match="any">
-          <text variable="title" font-style="italic" suffix=", "/>
+          <text variable="title"  prefix=""" suffix="," "/>
           <text term="in" suffix=": "/>
           <text macro="editor" suffix=", "/>
           <text variable="container-title" form="short" text-case="title" suffix=", "/>
@@ -124,14 +124,14 @@
         </else-if>
         <else-if type="patent">
           <group delimiter=", ">
-            <text variable="title" font-style="italic"/>
+            <text variable="title" prefix=""" suffix="""/>
             <text variable="number"/>
             <text macro="year-date"/>
           </group>
         </else-if>
         <else-if type="thesis">
           <group delimiter=", ">
-            <text variable="title" font-style="italic"/>
+            <text variable="title" prefix=""" suffix="""/>
             <text variable="genre"/>
             <text variable="publisher"/>
             <text macro="year-date"/>
@@ -139,9 +139,9 @@
         </else-if>
         <else>
           <group delimiter=" ">
-            <text variable="title" font-style="italic" suffix=","/>
-            <text variable="container-title" form="short" text-case="title"/>
-            <text variable="volume"/>
+            <text variable="title" prefix=""" suffix="," "/>
+            <text variable="container-title" form="long" font-style="italic" text-case="title"/>
+            <text variable="volume" font-style="bold"/>
             <text macro="year-date" prefix="(" suffix=")"/>
             <text variable="page" form="short"/>
           </group>
