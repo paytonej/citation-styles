@@ -55,6 +55,7 @@
   </macro>
   <macro name="date-sort-date">
     <date variable="issued" form="numeric"/>
+    </date>
   </macro>
   <macro name="publisher">
     <text variable="publisher" suffix=", "/>
@@ -91,7 +92,7 @@
   </macro>
   <citation collapse="citation-number">
     <sort>
-	  <key variable="issued" sort="ascending"/>
+	  <key macro="date-sort-date" sort="ascending"/>
 	  <key macro="citation-number" sort="descending"/>
     </sort>
     <layout prefix="[" suffix="]" delimiter=",">
