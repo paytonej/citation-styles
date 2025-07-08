@@ -92,7 +92,7 @@
   </macro>
   <citation collapse="citation-number">
     <sort>
-	  <key macro="date-sort-date" sort="ascending"/>
+	  <key macro="year-date" sort="ascending"/>
 	  <key macro="citation-number" sort="descending"/>
     </sort>
     <layout prefix="[" suffix="]" delimiter=",">
